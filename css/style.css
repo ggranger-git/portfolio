@@ -1,0 +1,378 @@
+/* ==========================================================================
+   ESTILOS BASE (Tema Dracula - Terminal Portfolio)
+   ========================================================================== */
+body {
+    background-color: #282a36; /* Background de Dracula */
+    font-family: 'Fira Code', 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.terminal-window {
+    width: 95%;
+    max-width: 1000px;
+    background-color: #282a36;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid #44475a; 
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto sutil inspirado en Yared al pasar por encima de la terminal completa */
+.terminal-window:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 25px 55px rgba(0,0,0,0.6);
+}
+
+.terminal-header {
+    background-color: #44475a;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.dot { width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; flex-shrink: 0; }
+.red { background-color: #ff5555; }
+.yellow { background-color: #f1fa8c; }
+.green { background-color: #50fa7b; }
+
+.terminal-body {
+    padding: 30px; /* Más aire e interlineado para mejorar la lectura */
+    color: #f8f8f2; 
+    font-size: 15px;
+    overflow-x: auto;
+}
+
+/* ==========================================================================
+   ANIMACIONES DE ENTRADA SUAVE (UX Premium)
+   ========================================================================== */
+@keyframes revelarEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animacion-entrada {
+    opacity: 0;
+    animation: revelarEntrada 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Colores de sintaxis Dracula */
+.titulo-seccion { 
+    color: #8be9fd; 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin: 0 0 0 15px; 
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.titulo-seccion i { 
+    margin-right: 10px; 
+    color: #bd93f9; 
+    display: inline-block;
+} 
+
+.command { color: #50fa7b; } 
+.path { color: #8be9fd; }    
+.comment { color: #6272a4; } 
+
+/* Layout de Perfil */
+.perfil-container {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 35px;
+    align-items: start;
+}
+
+.lateral-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+}
+
+.avatar-circular {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #6272a4; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    object-fit: cover;
+    background-color: #44475a;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.avatar-circular:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Botón de Descarga */
+.btn-cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #44475a;
+    color: #f1fa8c; 
+    border: 1px solid #6272a4;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-cv:hover {
+    background-color: #bd93f9; 
+    color: #282a36; 
+    border-color: #bd93f9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(189, 147, 249, 0.3);
+}
+
+/* ==========================================================================
+   INTERACTIVIDAD DE PROYECTOS (Efecto Script de Consola)
+   ========================================================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #44475a;
+}
+
+th {
+    background-color: #44475a;
+    color: #8be9fd; 
+    padding: 14px 12px;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: left;
+    border-bottom: 2px solid #6272a4;
+    letter-spacing: 0.5px;
+}
+
+td {
+    border: 1px solid #44475a;
+    padding: 14px 12px;
+    vertical-align: middle;
+    transition: background-color 0.2s ease;
+}
+
+/* Filas dinámicas */
+.tabla-interactiva tbody tr {
+    transition: background-color 0.25s ease;
+}
+
+.tabla-interactiva tbody tr:nth-child(even) {
+    background-color: rgba(68, 71, 90, 0.15);
+}
+
+.tabla-interactiva tbody tr:hover {
+    background-color: rgba(68, 71, 90, 0.6);
+}
+
+/* Animación de cursor activo al pasar el ratón sobre la fila */
+@keyframes parpadeoFila {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.tabla-interactiva tbody tr:hover .col-proyecto {
+    color: #50fa7b;
+    animation: parpadeoFila 1s infinite ease-in-out;
+}
+
+.col-proyecto {
+    color: #f8f8f2; 
+    font-weight: bold;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.col-descripcion {
+    color: #f8f8f2; 
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Modificado para que las flags de tecnologías del Lab de IA respiren perfectamente */
+.col-stack {
+    white-space: normal;
+    min-width: 180px;
+}
+
+.arg-tech {
+    color: #8be9fd; 
+    font-size: 13px;
+    background-color: rgba(98, 114, 164, 0.2);
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    display: inline-block;
+    border: 1px solid rgba(98, 114, 164, 0.1);
+}
+
+/* ==========================================================================
+   SECCIÓN DE HABILIDADES Y TECNOLOGÍAS (Estética Unificada)
+   ========================================================================== */
+.seccion-habilidades {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.categoria-tech {
+    color: #bd93f9; 
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.categoria-tech i {
+    margin-right: 8px;
+    color: #8be9fd; 
+}
+
+.habilidad-tag {
+    display: inline-block;
+    background-color: #44475a; 
+    color: #f8f8f2;            
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin: 5px 6px 5px 0;
+    font-size: 13px;
+    border: 1px solid #6272a4; 
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.habilidad-tag:hover {
+    border-color: #bd93f9;
+    transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   COMPLEMENTOS FINALES Y NAVEGACIÓN UX
+   ========================================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    color: #6272a4; 
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #8be9fd; 
+}
+
+.texto-plano {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 1.7; 
+}
+
+.enlace-proyecto {
+    color: #ff79c6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.enlace-proyecto:hover {
+    color: #bd93f9;
+    text-decoration: underline;
+}
+
+.item-estudios {
+    margin-bottom: 25px;
+    border-left: 3px solid #6272a4;
+    padding-left: 18px;
+}
+
+.institucion {
+    color: #8be9fd;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.institucion i {
+    margin-right: 6px;
+    color: #6272a4;
+}
+
+.fecha-estudio {
+    color: #6272a4;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+footer {
+    margin-top: 50px;
+    color: #6272a4;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .perfil-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+    .lateral-wrapper {
+        order: -1;
+        width: 100%;
+    }
+    .btn-cv {
+        max-width: 250px;
+    }
+    .nav-links {
+        justify-content: center;
+        gap: 15px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
