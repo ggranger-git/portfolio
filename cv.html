@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Guillermo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --dark: #282a36;
+            --current-line: #44475a;
+            --foreground: #f8f8f2;
+            --comment: #6272a4;
+            --cyan: #8be9fd;
+            --green: #50fa7b;
+            --orange: #ffb86c;
+            --pink: #ff79c6;
+            --purple: #bd93f9;
+            --yellow: #f1fa8c;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.5;
+            padding: 40px;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Encabezado */
+        header {
+            border-bottom: 3px solid var(--purple);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .info-principal h1 {
+            font-size: 32px;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+
+        .info-principal h2 {
+            font-size: 18px;
+            color: var(--purple);
+            font-weight: 600;
+        }
+
+        .contacto-list {
+            list-style: none;
+            font-size: 13px;
+            text-align: right;
+        }
+
+        .contacto-list li {
+            margin-bottom: 4px;
+            color: #555;
+        }
+
+        .contacto-list i {
+            color: var(--purple);
+            width: 18px;
+            text-align: center;
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: var(--dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 4px;
+        }
+
+        h3 i {
+            color: var(--purple);
+            margin-right: 8px;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* Bloques de experiencia / estudios */
+        .bloque-item {
+            margin-bottom: 15px;
+        }
+
+        .bloque-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: bold;
+            color: #111;
+            margin-bottom: 3px;
+        }
+
+        .bloque-sub {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+
+        /* Tags de tecnologías */
+        .tech-group {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .tech-group strong {
+            color: #222;
+        }
+
+        .tags {
+            display: inline;
+            color: #555;
+        }
+
+        /* Optimización estricta para impresión en PDF */
+        @media print {
+            body {
+                padding: 0;
+                background-color: #fff;
+                color: #000;
+            }
+            .cv-container {
+                max-width: 100%;
+            }
+            header {
+                border-bottom-color: #666;
+            }
+            h3 {
+                border-bottom-color: #666;
+                page-break-after: avoid;
+            }
+            .bloque-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <!-- ENCABEZADO -->
+        <header>
+            <div class="info-principal">
+                <h1>Guillermo Granger</h1>
+                <h2>Desarrollador Web & Gestión de Equipos</h2>
+            </div>
+            <ul class="contacto-list">
+                <li><i class="fas fa-envelope"></i> grangerguillermo@gmail.com.com</li>
+                <li><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/guillermo-granger-40645415b/</li>
+                <li><i class="fab fa-github"></i> https://github.com/ggranger-git</li>
+                <li><i class="fas fa-location-dot"></i> +34 658 02 52 44 - Sevilla, España</li>
+            </ul>
+        </header>
+
+        <!-- PERFIL PROFESIONAL -->
+        <section>
+            <h3><i class="fas fa-user"></i> Perfil Profesional</h3>
+            <p>
+                Estudiante de DAW con más de 20 años liderando equipos y gestionando proyectos en entornos industriales exigentes. Esta experiencia refuerza mi perfil técnico con habilidades en gestión de tiempos, resolución de incidencias, coordinación y orientación a resultados. Busco siempre comprender el negocio y aportar soluciones con impacto real. Especializado en desarrollo web, backend, sistemas Linux e infraestructura, con un fuerte interés en la automatización, IA generativa y programación asistida.
+            </p>
+        </section>
+
+        <!-- EDUCACIÓN -->
+        <section>
+            <h3><i class="fas fa-graduation-cap"></i> Formación Académica</h3>
+            
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Técnico Superior en Desarrollo de Aplicaciones Web (DAW)</span>
+                    <span>2024 - actualidad</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>IES Aguadulce</span>
+                    <span>Almería, España</span>
+                </div>
+                <p>Formación adaptada al plan de estudios LOMLOE, enfocada con especial interés en el diseño, desarrollo, despliegue y mantenimiento de la lógica de servidor, arquitecturas web dinámicas y persistencia de datos.</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Grado Superior en Informática Aplicada</span>
+                    <span>2000 - 2002</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Instituto Cibernos</span>
+                    <span>Sevilla, España</span>
+                </div>
+                <p>Formación de base orientada al desarrollo de software estructurado, gestión de sistemas de información, diseño de algoritmos y fundamentos de la programación lógica.</p>
+            </div>
+        </section>
+
+        <!-- COMPETENCIAS TÉCNICAS (STACK) -->
+        <section>
+            <h3><i class="fas fa-tools"></i> Stack Tecnológico</h3>
+            
+            <div class="tech-group">
+                <strong>Backend & Lógica:</strong> 
+                <span class="tags">PHP 8+, Java (POO), Laravel, Spring Boot, C, Visual Basic.</span>
+            </div>
+            
+            <div class="tech-group">
+                <strong>Bases de Datos & Persistencia:</strong> 
+                <span class="tags">SQL, MySQL, MariaDB, PostgreSQL, PL/SQL, MongoDB.</span>
+            </div>
+            
+            <div class="tech-group">
+                <strong>Sistemas e Infraestructura:</strong> 
+                <span class="tags">Docker, Docker Compose, Sistemas Linux / Bash, SSH, VirtualBox, Apache, Nginx, Git, GitHub.</span>
+            </div>
+
+            <div class="tech-group">
+                <strong>Frontend:</strong> 
+                <span class="tags">JavaScript (ES6+), HTML5, CSS3, TypeScript, Angular, Bootstrap, Tailwind CSS.</span>
+            </div>
+        </section>
+
+        <!-- PROYECTOS DESTACADOS / LABORATORIO -->
+        <section>
+            <h3><i class="fas fa-code"></i> Proyectos e Iniciativas</h3>
+            
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Local Homelab & Laboratorio IA Privado</span>
+                    <span>Entorno Linux</span>
+                </div>
+                <p>
+                    Diseño, despliegue y administración de un laboratorio tecnológico propio sobre Linux utilizando Docker. Configuración orientada a la experimentación real con servidores web (Apache/Nginx), virtualización (VBOX), bases de datos y el despliegue local de modelos de Inteligencia Artificial Generativa bajo entornos controlados.
+                </p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Desarrollo de Aplicaciones Web Integrales</span>
+                    <span>Ecosistema PHP / JS</span>
+                </div>
+                <p>
+                    Implementación de aplicaciones robustas utilizando arquitecturas MVC (Laravel), optimización de estados asíncronos en el frontend mediante JavaScript nativo, y diseño de bases de datos relacionales con control estricto de accesos y roles de usuario.
+                </p>
+            </div>
+        </section>
+
+        <!-- APTITUDES -->
+        <section>
+            <h3><i class="fas fa-star"></i> Competencias Clave</h3>
+            <p>
+                Liderazgo y coordinación de equipos profesionales // Gestión eficiente de tiempos y prioridades // Resolución compleja de incidencias // Orientación estratégica a resultados de negocio // Autonomía y proactividad orientada a la mejora continua.
+            </p>
+        </section>
+
+    </div>
+
+</body>
+</html>

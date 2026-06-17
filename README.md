@@ -44,9 +44,10 @@ Actualmente, combino mi madurez profesional con una sólida formación técnica.
 ## 📬 Contacto
 ¿Te gustaría hablar sobre cómo puedo aportar valor a tu equipo de desarrollo? 
 
-*   **Email:** tu.email@example.com
-*   **LinkedIn:** [linkedin.com/in/tu-perfil](https://linkedin.com)
-*   **Web:** [Enlace a tu GitHub Pages](https://tu-usuario.github.io/portfolio/)
+*   **Email:** grangerguillermo@gmail.com
+*   **Telefono:** +34 658 02 52 44
+*   **GitHub:** [https://github.com/ggranger-git](https://github.com/ggranger-git)
+*   **LinkedIn:** [https://www.linkedin.com/in/guillermo-granger-40645415b/](https://www.linkedin.com/in/guillermo-granger-40645415b/)
 
 ---
-*Diseño inspirado en el tema Dracula | 2026*
+*Porfolio creado por Guillermo Granger | 2026*
