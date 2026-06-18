@@ -102,7 +102,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 10px; /* Reducido ligeramente para un reparto proporcional entre Foto -> CV -> Gato */
     justify-content: center;
 }
 
@@ -148,6 +148,21 @@ body {
     border-color: #bd93f9;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(189, 147, 249, 0.3);
+}
+
+/* Enlace con logo del Octocat de GitHub (Ubicado debajo del CV) */
+.btn-github-lateral {
+    display: inline-block;
+    margin-top: 5px;        /* Pequeña holgura de separación con el botón superior */
+    font-size: 38px;        /* Dimensiones óptimas para el icono del gato */
+    color: #ff79c6;         /* Tono rosa Dracula característico */
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.btn-github-lateral:hover {
+    color: #ff92df;         /* Rosa con un punto extra de brillo/luminosidad */
+    transform: scale(1.1);  /* Efecto sutil de escalado */
 }
 
 /* ==========================================================================
