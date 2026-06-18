@@ -233,7 +233,8 @@ td {
 /* Modificado para que las flags de tecnologías del Lab de IA respiren perfectamente */
 .col-stack {
     white-space: normal;
-    min-width: 180px;
+    min-width: 50px;
+    text-align: center;
 }
 
 .arg-tech {
