@@ -17,7 +17,7 @@ Actualmente, combino mi madurez profesional con una sólida formación técnica.
 
 ---
 
-## 🛠 Stack Tecnológico
+## Stack Tecnológico
 
 ### Backend & Lógica
 `PHP 8+` · `Java (POO)` · `Laravel` · `Spring Boot` · `C` · `Visual Basic`
