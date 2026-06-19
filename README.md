@@ -8,7 +8,7 @@ Esta experiencia previa me permite abordar el desarrollo no solo desde el códig
 
 ---
 
-## 🚀 Sobre mí
+## Sobre mí
 Actualmente, combino mi madurez profesional con una sólida formación técnica. Me especializo en el desarrollo **backend**, administración de **sistemas Linux** y la creación de infraestructuras escalables.
 
 *   **Enfoque:** Backend, Linux, Automatización e IA Generativa.
@@ -17,7 +17,7 @@ Actualmente, combino mi madurez profesional con una sólida formación técnica.
 
 ---
 
-## 🛠 Stack Tecnológico
+## Stack Tecnológico
 
 ### Backend & Lógica
 `PHP 8+` · `Java (POO)` · `Laravel` · `Spring Boot` · `C` · `Visual Basic`
@@ -33,7 +33,7 @@ Actualmente, combino mi madurez profesional con una sólida formación técnica.
 
 ---
 
-## 📂 Proyectos Destacados
+## Proyectos Destacados
 
 *   **Local Homelab & IA:** Servidor de pruebas autónomo sobre Linux/Docker para la orquestación de servicios y experimentación con IA local.
 *   **Gestión Web:** Desarrollo de aplicaciones robustas con control de acceso por roles y analítica interna usando Laravel.
@@ -41,7 +41,7 @@ Actualmente, combino mi madurez profesional con una sólida formación técnica.
 
 ---
 
-## 📬 Contacto
+## Contacto
 ¿Te gustaría hablar sobre cómo puedo aportar valor a tu equipo de desarrollo? 
 
 *   **Email:** grangerguillermo@gmail.com
