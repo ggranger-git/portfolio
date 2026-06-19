@@ -8,7 +8,7 @@ Esta experiencia previa me permite abordar el desarrollo no solo desde el códig
 
 ---
 
-## 🚀 Sobre mí
+## Sobre mí
 Actualmente, combino mi madurez profesional con una sólida formación técnica. Me especializo en el desarrollo **backend**, administración de **sistemas Linux** y la creación de infraestructuras escalables.
 
 *   **Enfoque:** Backend, Linux, Automatización e IA Generativa.
@@ -31,18 +31,10 @@ Actualmente, combino mi madurez profesional con una sólida formación técnica.
 ### Frontend
 `JavaScript (ES6+)` · `HTML5` · `CSS3` · `TypeScript` · `Angular` · `Bootstrap`
 
----
-
-## 📂 Proyectos Destacados
-
-*   **Local Homelab & IA:** Servidor de pruebas autónomo sobre Linux/Docker para la orquestación de servicios y experimentación con IA local.
-*   **Gestión Web:** Desarrollo de aplicaciones robustas con control de acceso por roles y analítica interna usando Laravel.
-*   **Single Page Applications:** Desarrollo de interfaces dinámicas con gestión de estados asíncronos.
 
 ---
 
-## 📬 Contacto
-¿Te gustaría hablar sobre cómo puedo aportar valor a tu equipo de desarrollo? 
+## Contacto
 
 *   **Email:** grangerguillermo@gmail.com
 *   **Telefono:** +34 658 02 52 44
