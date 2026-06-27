@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Guillermo Granger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --dark: #282a36;
+            --current-line: #44475a;
+            --foreground: #f8f8f2;
+            --comment: #6272a4;
+            --cyan: #8be9fd;
+            --green: #50fa7b;
+            --orange: #ffb86c;
+            --pink: #ff79c6;
+            --purple: #bd93f9;
+            --yellow: #f1fa8c;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.5;
+            padding: 40px;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Encabezado */
+        header {
+            border-bottom: 3px solid var(--purple);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .info-principal h1 {
+            font-size: 32px;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+
+        .info-principal h2 {
+            font-size: 18px;
+            color: var(--purple);
+            font-weight: 600;
+        }
+
+        .contacto-list {
+            list-style: none;
+            font-size: 13px;
+            text-align: right;
+        }
+
+        .contacto-list li {
+            margin-bottom: 4px;
+            color: #555;
+        }
+
+        .contacto-list i {
+            color: var(--purple);
+            width: 18px;
+            text-align: center;
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: var(--dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 4px;
+        }
+
+        h3 i {
+            color: var(--purple);
+            margin-right: 8px;
+            font-size: 14px;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: var(--comment);
+            text-transform: uppercase;
+            margin: 15px 0 10px 0;
+            letter-spacing: 0.5px;
+            border-left: 3px solid var(--purple);
+            padding-left: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* Bloques de experiencia / estudios */
+        .bloque-item {
+            margin-bottom: 18px;
+        }
+
+        .bloque-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: bold;
+            color: #111;
+            margin-bottom: 3px;
+        }
+
+        .bloque-sub {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+
+        /* Tags de tecnologías / competencias */
+        .tech-group {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .tech-group strong {
+            color: #222;
+        }
+
+        .tags {
+            display: inline;
+            color: #555;
+        }
+
+        .texto-plano {
+            margin: 4px 0 0 0;
+            font-size: 13.5px;
+            color: #444;
+        }
+
+        /* Optimización estricta para impresión en PDF */
+        @media print {
+            body {
+                padding: 0;
+                background-color: #fff;
+                color: #000;
+            }
+            .cv-container {
+                max-width: 100%;
+            }
+            header {
+                border-bottom-color: #666;
+            }
+            h3 {
+                border-bottom-color: #666;
+                page-break-after: avoid;
+            }
+            .bloque-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <!-- ENCABEZADO -->
+        <header>
+            <div class="info-principal">
+                <h1>Guillermo Granger Reguera</h1>
+                <h2>Especialista en Calidad & Gestión de Equipos Industriales</h2>
+            </div>
+            <ul class="contacto-list">
+                <li><i class="fas fa-envelope"></i> grangerguillermo@gmail.com</li>
+                <li><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/guillermo-granger-40645415b/</li>
+                <li><i class="fab fa-github"></i> https://github.com/ggranger-git</li>
+                <li><i class="fas fa-location-dot"></i> +34 658 02 52 44 - Bormujos, Sevilla, España</li>
+            </ul>
+        </header>
+
+        <!-- PERFIL PROFESIONAL -->
+        <section>
+            <h3><i class="fas fa-user"></i> Perfil Profesional</h3>
+            <p>
+                Profesional con más de 20 años de trayectoria liderando equipos, coordinando proyectos y asegurando la calidad en entornos industriales y corporativos de alta exigencia. Amplia experiencia internacional en múltiples factorías de Airbus (Toulouse, Hamburgo, Bremen, Getafe, Lisboa y Sevilla) gestionando la conformidad de sistemas críticos. Combino una sólida base técnica en infraestructuras y sistemas de información con competencias avanzadas en gestión operativa, resolución de incidencias complejas y orientación a resultados de negocio.
+            </p>
+        </section>
+
+        <!-- CERTIFICACIONES Y CUALIFICACIONES -->
+        <section>
+            <h3><i class="fas fa-certificate"></i> Certificaciones y Habilitaciones</h3>
+            <div class="tech-group">
+                <strong>Cualificación Profesional FME559_2:</strong> 
+                <span class="tags">Montaje de estructuras e instalación de sistemas y equipos de aeronaves (Junta de Andalucía: UC1850_2 Montaje, UC1851_2 Sellado, UC1852_2 Instalación).</span>
+            </div>
+            <div class="tech-group">
+                <strong>Homologaciones Industriales:</strong> 
+                <span class="tags">Procesos de Fabricación Eléctrica Aeronáutica (BUREAU VERITAS).</span>
+            </div>
+            <div class="tech-group">
+                <strong>Formación Técnica Especializada:</strong> 
+                <span class="tags">Curso Técnico en Procesos de Hidrógeno y Pilas de Combustible (Universidad San Jorge).</span>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA LABORAL: AERONÁUTICA Y CALIDAD -->
+        <section>
+            <h3><i class="fas fa-shield-halved"></i> Experiencia en Inspección y Gestión de Calidad</h3>
+            
+            <!-- ATIS IBÉRICA DERICHEBOURG -->
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>ATIS IBÉRICA DERICHEBOURG</span>
+                    <span>2015 - Actualidad</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Inspector de Calidad, Team Leader & Quality Coordinator</span>
+                    <span>Sevilla / Internacional</span>
+                </div>
+                <p class="texto-plano">
+                    • <strong>Inspector de calidad A400M (Ago. 2015 - Actualidad):</strong> Verificación e inspección integral de sistemas eléctricos, mecánicos y estructurales en líneas IFA y FTC.<br>
+                    • <strong>Inspector de calidad A321XLR (Abr. 2025 - Jun. 2025):</strong> Despliegue en la FAL de Hamburgo (Halle 259) y OSW Nantes; realización de inspecciones estructurales, eléctricas, hidráulicas, neumáticas y recepción de fuselajes.<br>
+                    • <strong>Jefe de Equipo FTC A400M (Ene. 2024 - Ene. 2025):</strong> Team Leader a cargo de la gestión del equipo para la Working Party (revisión de 12 años) en FTC A400M.<br>
+                    • <strong>Jefe de Equipo A321XLR (Oct. 2024 - Dic. 2024):</strong> Conducción y supervisión de equipos en línea de montaje Hangar 259 (Hamburgo) para trabajos mecánicos, hidráulicos y eléctricos.<br>
+                    • <strong>Quality Coordinator / Focal Point (2019 - 2024):</strong> Coordinación técnica de calidad en IFA Transfer & FTC y enlace directo (Focal Point) de calidad con el cliente en la FAL A400M.<br>
+                    • <strong>Inspector y Técnico A320 / OSW (May. 2023 - Nov. 2023):</strong> Verificación de trabajos estructurales, mecánicos, hidráulicos y tanques en OSW Nantes y ejecución eléctrica (KAYL) en Hamburgo.<br>
+                    • <strong>Inspector de calidad en Bremen (Nov. 2015 - Dic. 2015):</strong> Control y conformidad de montajes eléctricos en IFA A400M.
+                </p>
+            </div>
+
+            <!-- ELIMCO AEROSPACE -->
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>ELIMCO AEROSPACE</span>
+                    <span>2005 - 2015</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Responsable de Sector de Calidad, Inspector & Técnico</span>
+                    <span>Sevilla, España</span>
+                </div>
+                <p class="texto-plano">
+                    • <strong>RQS Responsable Sector Calidad (Ago. 2012 - Ago. 2015):</strong> Responsable máximo del área de Calidad en REC dentro de la FAL A400M.<br>
+                    • <strong>Inspector de calidad (Nov. 2010 - Ago. 2012):</strong> Aseguramiento de la conformidad en la fabricación de mazos eléctricos y unidades de control.<br>
+                    • <strong>Técnico en Fabricación Eléctrica Aeronáutica (Nov. 2005 - Nov. 2010):</strong> Fabricación e instalación en avión para programas Airbus Military (A400M, C-295, A330 MRTT, CN-235). Interpretación de planos complejos, ruteado sobre form board, pelado, crimpado, soldadura blanda en relés/pantallas, conexionado de férrulas y desarrollo de programas de testeo para máquina Hughe. Soporte a LEACH INT.
+                </p>
+            </div>
+        </section>
+
+        <!-- EXPERIENCIA LABORAL: TECNOLOGÍAS Y SISTEMAS -->
+        <section>
+            <h3><i class="fas fa-code"></i> Experiencia en Tecnologías y Sistemas de Información</h3>
+            
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Diseñador y Desarrollador Web</span>
+                    <span>Autónomo - 2003 / 2004</span>
+                </div>
+                <p class="texto-plano">
+                    • <strong>Desarrollo Web:</strong> Diseño integral de sitios web corporativos y plataformas de comercio electrónico a medida mediante maquetación avanzada HTML/CSS y desarrollo backend dinámico en PHP con persistencia de datos en MySQL.<br>
+                    • <strong>Sistemas e Infraestructura de Red:</strong> Despliegue de redes locales (LAN) para pymes, incluyendo el cableado estructurado y la configuración de routers y switches. Implementación y administración de servidores de archivos locales en Samba para entornos mixtos Windows/Linux.<br>
+                    • <strong>Administración de Hosting:</strong> Gestión completa de servicios de alojamiento web, tramitación de dominios, configuración de zonas DNS, administración de cuotas de disco y cuentas de correo corporativo (POP3/SMTP).
+                </p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Desarrollador Web</span>
+                    <span>Videostar Universal S.L. - 2002</span>
+                </div>
+                <p class="texto-plano">
+                    • Desarrollo y mantenimiento técnico del portal web corporativo (www.movistore.es) empleando maquetación estructurada en HTML y programación del lado del servidor basada en la arquitectura clásica LAMP (Linux, Apache, MySQL, PHP).
+                </p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Técnico Microinformático (Helpdesk / Soporte)</span>
+                    <span>Cibernos Consulting S.L. - 2001 / 2002</span>
+                </div>
+                <p class="texto-plano">
+                    • Despliegue de soporte técnico presencial especializado en el edificio central de la Consejería de Economía y Hacienda de la Junta de Andalucía (Torre Triana).<br>
+                    • <strong>Migración y Actualización:</strong> Instalación, configuración y clonación masiva de estaciones de trabajo para la actualización global de sistemas hacia Windows 2000.<br>
+                    • <strong>Soporte de Red:</strong> Resolución de incidencias de conectividad LAN/Internet, mapeo de recursos compartidos en servidor y gestión de permisos corporativos.<br>
+                    • <strong>Seguridad e Integridad:</strong> Administración y despliegue de soluciones antivirus corporativas, desinfección preventiva de sistemas y aplicación estricta de parches de seguridad.
+                </p>
+            </div>
+        </section>
+
+        <!-- FORMACIÓN ACADÉMICA -->
+        <section>
+            <h3><i class="fas fa-graduation-cap"></i> Formación Académica</h3>
+            
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>CFGS Desarrollo de Aplicaciones Web (DAW)</span>
+                    <span>2024 - Actualidad</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>IES Aguadulce (Plan LOMLOE enfocado en lógica de servidor y datos)</span>
+                    <span>Almería, España</span>
+                </div>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Grado Superior en Informática Aplicada</span>
+                    <span>2000 - 2002</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Instituto Cibernos (Bases de programación lógica, algoritmos y sistemas)</span>
+                    <span>Sevilla, España</span>
+                </div>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Bachillerato, COU y Selectividad</span>
+                    <span>1992 - 1999</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>IES Gustavo Adolfo Bécquer</span>
+                    <span>Sevilla, España</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMACIÓN ESPECIALIZADA COMPLEMENTARIA (REESTRUCTURADA) -->
+        <section>
+            <h3><i class="fas fa-book-open"></i> Formación Especializada Complementaria</h3>
+
+            <!-- SUBBLOQUE: CALIDAD AERONÁUTICA Y GESTIÓN -->
+            <h4>Calidad Aeronáutica y Gestión</h4>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Editing of Non-Conformity in SAP R/3 (PDA)</span>
+                    <span>Septiembre 2016</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Airbus Defence & Space</span>
+                    <span>Sevilla, España</span>
+                </div>
+                <p class="texto-plano">Formación avanzada e instrucción en creación y gestión integral de No Conformidades (NC Workflow, Head-Data, Concession, DQN, documentos N1 e Inbox System) vinculada a Derichebourg Atis Aéronautique S.L.</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Calidad en los Procesos Aeronáuticos y Gestión de Almacén</span>
+                    <span>Agosto 2009</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Junta de Andalucía - Consejería de Empleo</span>
+                    <span>F.P.O. Exp: 98/2008/J/99 41 845</span>
+                </div>
+                <p class="texto-plano">Impartido de forma presencial por la Fundación Andaluza Fondo de Formación y Empleo (FAFFE) en La Rinconada.</p>
+            </div>
+
+            <!-- SUBBLOQUE: PREVENCIÓN DE RIESGOS Y SEGURIDAD INDUSTRIAL -->
+            <h4>Prevención de Riesgos y Seguridad Industrial</h4>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Refresco de Seguridad en Trabajos en Alturas (4h)</span>
+                    <span>Mayo 2025</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>ALFIL Formación y Consultoría, S.L.</span>
+                    <span>ID Certificado: sLkqx0DA4m</span>
+                </div>
+                <p class="texto-plano">Modalidad: Teleformación. Formación vinculada a Derichebourg Aeronautics Services Spain, S.L.</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Seguridad en Trabajos en Atmósferas Explosivas (ATEX) (4h)</span>
+                    <span>Mayo 2025</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>ALFIL Formación y Consultoría, S.L.</span>
+                    <span>ID Certificado: HSfAL312TB</span>
+                </div>
+                <p class="texto-plano">Modalidad: Teleformación. Formación vinculada a Derichebourg Aeronautics Services Spain, S.L.</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Seguridad en la Manipulación y Exposición a Productos Químicos (4h)</span>
+                    <span>Mayo 2025</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>ALFIL Formación y Consultoría, S.L.</span>
+                    <span>ID Certificado: WUI3Wp7ng8</span>
+                </div>
+                <p class="texto-plano">Modalidad: Teleformación. Formación vinculada a Derichebourg Aeronautics Services Spain, S.L.</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Riesgo Eléctrico (2h)</span>
+                    <span>Diciembre 2022</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>ALFIL Formación y Consultoría, S.L.</span>
+                    <span>ID Certificado: Bdze1PR2Rs</span>
+                </div>
+                <p class="texto-plano">Modalidad: Teleformación. Formación vinculada a ATIS Ibérica (Derichebourg Atis Aéronautique, S.L.)</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Trabajos en Caliente - Soldaduras (2h)</span>
+                    <span>Diciembre 2022</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>ALFIL Formación y Consultoría, S.L.</span>
+                    <span>ID Certificado: L9GaGof1TR</span>
+                </div>
+                <p class="texto-plano">Modalidad: Teleformación. Formación vinculada a ATIS Ibérica (Derichebourg Atis Aéronautique, S.L.)</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Seguridad en Montador y Verificador de Estructuras Aeronáuticas (8h)</span>
+                    <span>Julio 2015</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Profesionales Técnicos en Prevención, S.L. (PROTEC)</span>
+                    <span>Teleformación / Tutorizado</span>
+                </div>
+                <p class="texto-plano">Formación de concienciación sobre riesgos específicos en tareas de verificación de montajes, medidas de protección colectiva e individual. Vinculado a Job Impulse España, S.L.U.</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Seguridad en el Manejo de Plataformas Elevadoras (PEMP) (6h)</span>
+                    <span>Julio 2015</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Profesionales Técnicos en Prevención, S.L. (PROTEC)</span>
+                    <span>Presencial / Práctico</span>
+                </div>
+                <p class="texto-plano">Formación técnica vinculada al puesto de trabajo en Job Impulse España, S.L.U.</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Seguridad en Atmósferas Explosivas (ATEX) y Manipulación de PPQQ (8h)</span>
+                    <span>Julio 2015</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Profesionales Técnicos en Prevención, S.L. (PROTEC)</span>
+                    <span>Teleformación</span>
+                </div>
+                <p class="texto-plano">Formación especializada vinculada al puesto de trabajo en Job Impulse España, S.L.U.</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Básico de Prevención de Riesgos Laborales en la Construcción (50h)</span>
+                    <span>Junio 2006</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Ibermutuamur</span>
+                    <span>Reg: 991310813717555258451100048206</span>
+                </div>
+                <p class="texto-plano">Superado con evaluación positiva en Mantenimiento y Montajes Elimco, S.A. Certificado en Madrid.</p>
+            </div>
+
+            <!-- SUBBLOQUE: ENERGÍAS RENOVABLES Y SOSTENIBILIDAD -->
+            <h4>Energías Renovables y Sostenibilidad</h4>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Diseño y Mantenimiento de Instalaciones de Energía Solar Fotovoltaica (100h)</span>
+                    <span>Diciembre 2023</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Cámara Oficial de Comercio, Industria y Navegación de Jerez de la Frontera</span>
+                    <span>Código: ENAE003PO - Exp: F220981AA</span>
+                </div>
+                <p class="texto-plano">Modalidad: Teleformación (Planes de formación de ámbito estatal - SEPE). Contenidos: radiación, módulos, generadores fotovoltaicos, proyectos conectados a red, planes de vigilancia y costes.</p>
+            </div>
+
+            <div class="bloque-item">
+                <div class="bloque-header">
+                    <span>Curso Técnico en Procesos de Hidrógeno y Pilas de Combustible (150h)</span>
+                    <span>Junio 2021</span>
+                </div>
+                <div class="bloque-sub">
+                    <span>Universidad San Jorge (Grupo San Valero) / SEAS</span>
+                    <span>Calificación: Sobresaliente (6 ECTS) - Reg: E36-01474</span>
+                </div>
+                <p class="texto-plano">Extensión Universitaria. Análisis exhaustivo de producción de H2 renovable/no renovable, sistemas de almacenamiento avanzado (presión, líquido, hidruros), balance de planta de pilas de combustible y recomendaciones de seguridad.</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
